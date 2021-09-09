@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="mb-5">Lista de Postagens</h1>
+
+        <div id="js-mensagem-view"></div>
+
+        <form class="form" onsubmit="postsController._buscaPosts(event )">
+
+            <div class="text-center">
+                <button id="btnCadastro" class="btn btn-primary"
+                        type="submit">Listar</button>
+            </div>
+        
+        </form>
+
+
+        <div id="js-postsView">
+        
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="js/app/models/Post.js"></script>
+    <script src="js/app/models/PostList.js"></script>
+    <script src="js/app/controllers/PostsController.js"></script>
+    <script src="js/app/views/View.js"></script>
+    <script src="js/app/views/PostView.js"></script>
+
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
+
+    
+    <script>
+       let postsController = new PostsController();
+    </script>
+
+  </body>
+</html>
